@@ -1,0 +1,220 @@
+/* CSS RESET */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+} 
+
+#navbar::before{
+    content:" ";
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+
+/* Navigation Bar Logo and Images */
+#logo{
+    margin-right:50px;
+}
+
+#logo img
+{
+    height: 90px;
+    width:90px;
+}
+
+#navbar ul
+{
+    display: flex;
+}
+
+ul li
+{
+   list-style: none;
+   margin-right: 0px;
+}
+
+ul li a 
+{
+   text-decoration: none;
+   font-size: 20px;
+   padding: 5px 10px;
+   color: white;
+}
+
+ul li a:hover 
+{
+   color: black;
+   background-color: white;
+   border-radius: 20px;
+}
+
+#Home
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("./Images/foodbg.jpg") no-repeat center center/cover;
+    height: 450px;
+    position: relative;
+    z-index: -1;
+    bottom:94px;
+    color: white;
+
+}
+
+#Home h1
+{
+    margin-top:30px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    
+}
+
+#Home p
+{
+    font-size: 20px;
+}
+
+#Home .btn{
+    margin-top: 20px;
+    padding: 5px 12px;
+    font-size: 16px;
+    background-color: brown;
+    color: white;
+    border:2px solid white;
+    border-radius:15px;
+}
+
+#Home .btn:hover{
+   background-color: aquamarine;
+}
+
+
+#Service-Container
+{
+    margin-top: -69px;
+}
+
+.h-primary
+{
+  text-align: center;
+  font-size:40px;
+  margin-bottom: 30px;
+}
+
+#Services
+{
+    display: flex;
+}
+#Services .box
+{
+   border: 3px solid red;
+   text-align: center;
+   margin: 10px;
+   background-color: rgb(255, 245, 245);
+   border-radius: 23px;
+   padding-bottom: 30px;
+}
+
+#Services .box:hover
+{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+
+#Services .box p
+{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+#Services .box img
+{
+    height:120px;
+}
+
+#client-Container
+{
+    border:2px solid black;
+    margin-top: 30px;
+    background: url("./Images/foodbg1.jpg") no-repeat center center/cover;
+    position: relative;
+    z-index: -1;
+}
+
+.h-secondary
+{
+  text-align: center;
+  font-size:40px;
+  margin-bottom: 30px;
+}
+
+#Clients
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#Clients .client-item img
+{
+   height: 120px;
+}
+
+#contact-container
+{
+   margin-top: 30px;
+   background: url("./Images/contact.jpg") no-repeat center center/cover;
+    position: relative;
+    z-index: -1;
+}
+
+#contacts
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contacts .form-group
+{
+   width: 60%;
+   text-align: center;
+   margin: 10px;
+}
+#contacts .form-group input,#contacts .form-group textarea
+{
+    display: inline-block;
+    width: 60%;
+    font-size: 15px;
+    text-align: center;
+    border:1px solid black;
+    border-radius: 8px;
+}
+#contacts .form-group input
+{
+    height: 20px;
+}
+#contacts .form-group label
+{
+    font-size: 20px;
+    font-weight: bold;
+}
